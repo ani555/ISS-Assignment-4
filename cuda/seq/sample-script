@@ -1,0 +1,5 @@
+# !/bin/sh
+#PBS -N myjob
+
+cd /home/aniruddhab/cuda/seq
+./sum

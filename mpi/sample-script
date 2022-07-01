@@ -1,0 +1,7 @@
+# !/bin/csh
+#PBS -N myjob
+#PBS -q course
+#PBS -l nodes=10:ppn=8
+
+cd /home/aniruddhab/sem2/mpi               # Direct it to your current working directory
+mpiexec -np 10 -f $PBS_NODEFILE ./pmerge_sort_mpi  #This runs with 32 MPI processes
